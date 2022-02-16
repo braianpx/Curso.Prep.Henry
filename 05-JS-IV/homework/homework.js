@@ -7,14 +7,14 @@ function crearGato(nombre, edad) {
   // Devuelve el objeto
   // Tu código:
 let objeto = {
-nombre: "nombre",
+nombre: nombre,
 edad: edad,
-meow = function(){
+meow : function(){
   return "Meow!";
 }
-};
-return objeto;
 }
+return objeto;
+};
 
 
 function agregarPropiedad(objeto, property) {
@@ -22,7 +22,7 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-objeto["property"] = null;
+objeto[property] = null;
 return objeto;
 }
 
@@ -38,10 +38,8 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-let objetoMisterioso = {
-  numeroMisterioso: numeroMisterioso;
-}
-let resultado = objetoMisterioso["numeroMisterioso"] * 5;
+
+let resultado = objetoMisterioso.numeroMisterioso * 5;
 return resultado;
 }
 
@@ -50,7 +48,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-delete objeto.unaPropiedad;
+delete objeto[unaPropiedad];
 return objeto;
 }
 
@@ -59,9 +57,9 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
 let objeto = {
-  nombre: "nombre",
-  email: "email",
-  password: "password"
+  nombre: nombre,
+  email: email,
+  password: password
 }
 return objeto;
 }
@@ -70,12 +68,12 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-if(usuario["email"]) {
+if(usuario.email) {
   return true;
 }else{
-  retun false;
+ return false;
 }
-}
+};
 
 
 
@@ -85,9 +83,9 @@ function tienePropiedad(objeto, propiedad) {
   // De lo contrario, devuelve "false"
   // Tu código:
 if(objeto[propiedad]) {
-  true;
+  return true;
 }else{
-false;
+return false;
 }
 }
 
@@ -96,10 +94,10 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-if(usuario["password"] === "password") {
-  true;
+if(usuario.password === password) {
+  return true;
 }else{
-  false;
+  return false;
 }
 }
 
@@ -107,7 +105,7 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-usuario.password = "nuevaPassword"
+usuario.password = nuevaPassword;
 return usuario;
 }
 
@@ -140,9 +138,9 @@ function sumarLikesDeUsuario(usuario) {
   // Devuelve la suma
   // Tu código:
   let suma = 0;
-  for(let i = 0; i < usuario.posts.length; i++) {
-      suma = suma + usuario.posts[i].likes;
-    }
+for(let i = 0; i < usuario.posts.length; i++) {
+  suma = suma + usuario.posts[i].likes} 
+    
 return suma;
         }
 

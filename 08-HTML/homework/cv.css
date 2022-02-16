@@ -1,0 +1,14 @@
+.tiClass {
+	color: slateblue;
+	font-size: 20px;
+	font-family: Segoe UI;
+
+}
+.subClass{
+	color: darkslategrey;
+	font-size: 18px;
+	font-style: italic;
+}
+body{
+	background-image:url(https://static.vecteezy.com/system/resources/previews/001/836/212/non_2x/abstract-grey-white-background-poster-with-dynamic-shapes-vector.jpg) ;
+}

@@ -28,11 +28,14 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-let sumaDeTodos = numeros.reduce(Function (acc, elemento) {
-  return acc + elemento ;
-});
-return cb(sumaDeTodos)
-}
+
+// let sumaTotal = numeros.reduce(Function(acc, curr) { 
+//    return acc + curr;
+// },0);
+// cb(sumaTotal);
+// }
+
+
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno

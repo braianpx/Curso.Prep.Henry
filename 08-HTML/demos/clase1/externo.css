@@ -2,11 +2,12 @@ body {
   background-color: black;
 }
 
-p {
+#unico {
   color: blue;
   font-size: 30px;
 }
 
 .amarillo {
   color: yellow;
+  font-size: 60px;
 }
